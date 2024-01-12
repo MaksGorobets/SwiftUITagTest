@@ -101,8 +101,8 @@ struct ContentView: View {
                     .padding(.horizontal)
                 }
             }
+            .navigationTitle("Tag Test")
         }
-        .navigationTitle("Tag Test")
     }
 }
 
