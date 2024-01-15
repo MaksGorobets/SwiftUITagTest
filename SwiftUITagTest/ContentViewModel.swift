@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 @Observable
-class ContentViewModel: ObservableObject {
+class ContentViewModel {
     
     var rows: [[Tag]] = []
     var tags: [Tag] = [
