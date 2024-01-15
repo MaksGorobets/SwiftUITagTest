@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E91023FB2B4DFD45004F5A41 /* TestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91023FB2B4DFD45004F5A41 /* SwiftUITagTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITagTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91023FE2B4DFD45004F5A41 /* TestingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppApp.swift; sourceTree = "<group>"; };
 		E91024002B4DFD45004F5A41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E91024022B4DFD46004F5A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		E91023F22B4DFD45004F5A41 = {
 			isa = PBXGroup;
 			children = (
-				E91023FD2B4DFD45004F5A41 /* TestingApp */,
+				E91023FD2B4DFD45004F5A41 /* SwiftUITagTest */,
 				E91023FC2B4DFD45004F5A41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,12 +49,12 @@
 		E91023FC2B4DFD45004F5A41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E91023FB2B4DFD45004F5A41 /* TestingApp.app */,
+				E91023FB2B4DFD45004F5A41 /* SwiftUITagTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E91023FD2B4DFD45004F5A41 /* TestingApp */ = {
+		E91023FD2B4DFD45004F5A41 /* SwiftUITagTest */ = {
 			isa = PBXGroup;
 			children = (
 				E9E2BBC12B51E192001DF23D /* ExtensionsForTags.swift */,
@@ -65,7 +65,7 @@
 				E91024022B4DFD46004F5A41 /* Assets.xcassets */,
 				E91024042B4DFD46004F5A41 /* Preview Content */,
 			);
-			path = TestingApp;
+			path = SwiftUITagTest;
 			sourceTree = "<group>";
 		};
 		E91024042B4DFD46004F5A41 /* Preview Content */ = {
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E91023FA2B4DFD45004F5A41 /* TestingApp */ = {
+		E91023FA2B4DFD45004F5A41 /* SwiftUITagTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E91024092B4DFD46004F5A41 /* Build configuration list for PBXNativeTarget "TestingApp" */;
+			buildConfigurationList = E91024092B4DFD46004F5A41 /* Build configuration list for PBXNativeTarget "SwiftUITagTest" */;
 			buildPhases = (
 				E91023F72B4DFD45004F5A41 /* Sources */,
 				E91023F82B4DFD45004F5A41 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = TestingApp;
+			name = SwiftUITagTest;
 			productName = TestingApp;
-			productReference = E91023FB2B4DFD45004F5A41 /* TestingApp.app */;
+			productReference = E91023FB2B4DFD45004F5A41 /* SwiftUITagTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E91023F62B4DFD45004F5A41 /* Build configuration list for PBXProject "TestingApp" */;
+			buildConfigurationList = E91023F62B4DFD45004F5A41 /* Build configuration list for PBXProject "SwiftUITagTest" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E91023FA2B4DFD45004F5A41 /* TestingApp */,
+				E91023FA2B4DFD45004F5A41 /* SwiftUITagTest */,
 			);
 		};
 /* End PBXProject section */
@@ -283,9 +283,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITagTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,7 +297,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makswinters.TestingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makswinters.SwiftUITagTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,9 +312,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestingApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITagTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.makswinters.TestingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makswinters.SwiftUITagTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E91023F62B4DFD45004F5A41 /* Build configuration list for PBXProject "TestingApp" */ = {
+		E91023F62B4DFD45004F5A41 /* Build configuration list for PBXProject "SwiftUITagTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E91024072B4DFD46004F5A41 /* Debug */,
@@ -344,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E91024092B4DFD46004F5A41 /* Build configuration list for PBXNativeTarget "TestingApp" */ = {
+		E91024092B4DFD46004F5A41 /* Build configuration list for PBXNativeTarget "SwiftUITagTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E910240A2B4DFD46004F5A41 /* Debug */,

@@ -18,40 +18,45 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack(alignment: .bottom) {
-                VStack{
-                    VStack(alignment: .leading, spacing: 4) {
-                        ForEach(viewModel.rows, id:\.self) { rows in
-                            HStack(spacing: 6) {
-                                ForEach(rows){ row in
-                                    Text(row.name)
-                                        .foregroundStyle(.white)
-                                        .font(.system(size: 16))
-                                        .padding(.leading, 14)
-                                        .padding(.trailing, 30)
-                                        .padding(.vertical, 10)
-                                        .background(
-                                            ZStack(alignment: .trailing){
-                                                Capsule()
-                                                    .fill(row.color.gradient)
-                                                Button{
-                                                    viewModel.removeTag(by: row.id)
-                                                } label:{
-                                                    Image(systemName: "xmark")
-                                                        .frame(width: 15, height: 15)
-                                                        .padding(.trailing, 8)
-                                                        .foregroundColor(.red)
+                ScrollView(.vertical) {
+                    VStack{
+                        VStack(alignment: .leading, spacing: 4) {
+                            ForEach(viewModel.rows, id:\.self) { rows in
+                                HStack(spacing: 6) {
+                                    ForEach(rows){ row in
+                                        Text(row.name)
+                                            .fixedSize()
+                                            .foregroundStyle(.white)
+                                            .font(.system(size: 16))
+                                            .padding(.leading, 14)
+                                            .padding(.trailing, 30)
+                                            .padding(.vertical, 10)
+                                            .background(
+                                                ZStack(alignment: .trailing){
+                                                    Capsule()
+                                                        .fill(row.color.gradient)
+                                                    Button{
+                                                        viewModel.removeTag(by: row.id)
+                                                    } label:{
+                                                        Image(systemName: "xmark")
+                                                            .frame(width: 15, height: 15)
+                                                            .padding(.trailing, 10)
+                                                            .foregroundColor(.white)
+                                                    }
                                                 }
-                                            }
-                                        )
+                                            )
+                                            .shadow(radius: 3)
+                                    }
+                                    Spacer()
                                 }
+                                .frame(height: 28)
+                                .padding(.bottom, 15)
                             }
-                            .frame(height: 28)
-                            .padding(.bottom, 15)
                         }
+                        .padding(24)
+                        
+                        Spacer()
                     }
-                    .padding(24)
-                    
-                    Spacer()
                 }
                 VStack {
                     if viewModel.isShowingSelectior {
@@ -61,6 +66,10 @@ struct ContentView: View {
                         TextField("Enter tag", text: $viewModel.tagText, onCommit: {
                             viewModel.addTag()
                         })
+                        .autocorrectionDisabled()
+                        .onChange(of: viewModel.tagText) {
+                            viewModel.limitTextField()
+                        }
                         .padding()
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
@@ -100,6 +109,8 @@ struct ContentView: View {
                     }
                     .padding(.horizontal)
                 }
+                .padding(.vertical, 10)
+                .background(.ultraThinMaterial)
             }
             .navigationTitle("Tag Test")
         }
