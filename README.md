@@ -1,6 +1,7 @@
 ## References:
 
 [Custom Color Picker in SwiftUI by Ishtiak Ahmed](https://ishtiz.com/swiftui/custom-color-picker-in-swiftui)
+
 [Tags List View in SwiftUI (Chips View) by M. Abbas](https://medium.com/geekculture/tags-view-in-swiftui-e47dc6ce52e8)
 
 ## Screenshots:
